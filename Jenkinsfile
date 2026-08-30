@@ -1,10 +1,10 @@
 pipeline {
 
-    // agent any
+     agent any
 
-	agent {
+	// agent {
 		 label 'linux-agent'
-	}
+	} //
 
     stages {
 
