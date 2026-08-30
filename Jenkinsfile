@@ -25,6 +25,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'docker compose up -d'
+				sh 'sleep 60'
                 sh 'curl -f http://localhost:5000'
             }
         }
